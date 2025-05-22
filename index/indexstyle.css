@@ -1,0 +1,11 @@
+.hero {
+  position: relative;
+  height: 60vh;
+  background-image: url('../imágenes/hamburguesas.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
