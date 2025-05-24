@@ -32,4 +32,6 @@
   flex-direction: column;
   justify-content: start;
   text-align: left;
+  padding-left: 40px;
+  padding-top: 30px;
 }
