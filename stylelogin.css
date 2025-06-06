@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.conteiner {
+  display: flex;
+  height: 100vh; /* altura completa de la ventana */
+}
+
+.ladoright, .ladoleft {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.ladoleft {
+  background-color: #f5f5f5;
+  justify-content: center;
+}
+
+.ladoright {
+  justify-content: flex-start; /* Alinea a la izquierda */
+  padding-left: 80px; /* empuja más hacia la derecha */
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 460px;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Montserrat';
+  font-size: 2.6rem;
+  font-weight: 800; /* más grueso */
+  letter-spacing: -1px; /* más apretado */
+  line-height: 1.2;
+}
+
+.ladoright p {
+  font-family: 'Montserrat';
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%; /* botones más largos */
+  margin-bottom: 30px; /* separación extra con el enlace */
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #ccc;
+  padding: 14px 18px;
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 80%;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 85%;
+}
+
+.btn:hover {
+  background-color: #f2f2f2;
+}
+
+.btn img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Estilos opcionales por marca */
+.facebook img { filter: none; }
+.google img { filter: none; }
+.apple img { filter: grayscale(1); }
+.email img { filter: grayscale(1); }
+
+.linc {
+  display: inline-block;
+  margin-top: 20px; /* Más separado del último botón */
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.linc:hover {
+  text-decoration: underline;
+}
