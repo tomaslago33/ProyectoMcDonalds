@@ -1,4 +1,4 @@
-body {
+  body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       background-color: white;
@@ -12,7 +12,8 @@ body {
       background-color: #fff;
       border-bottom: 1px solid #ddd;
     }
-     .logo-container {
+
+    .logo-container {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -20,10 +21,11 @@ body {
 
   .logo {
   height: 48px;
-  margin-bottom: 2.5rem; 
+  margin-bottom: 2.5rem; /* más separación entre logo y enlaces */
  margin-left: 50px;
 }
-.menu-secundario ul {
+
+    .menu-secundario ul {
       list-style: none;
       display: flex;
       gap: 2.5rem;
@@ -47,4 +49,25 @@ body {
       cursor: pointer;
       border-radius: 4px;
       height: fit-content;
+    }
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      justify-content: center;
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .categoria img {
+      width: 80px;
+      height: auto;
+    }
+
+    .categoria p {
+      margin-top: 0.5rem;
+      font-weight: 500;
     }
