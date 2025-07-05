@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Navegación McDonald's</title>
+  <link rel="stylesheet" href="stylenav.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <header>
+    <button class="menu-btn" id="openMenu">&#9776;</button>
+  </header>
+
+  <nav class="side-menu" id="sideMenu">
+    <button class="close-btn" id="closeMenu">&times;</button>
+    <ul class="menu-list">
+      <li><a href="#"><img src="Captura de pantalla 2025-05-23 214636.png" alt=""> Productos</a></li>
+      <li><a href="#"><img src="Frame_2010_a290bfee94.webp" alt=""> En familia</a></li>
+      <li><a href="#"><img src="Open_Door_Tour_De_Nuestra_Cocina_9ae140a377.png" alt=""> Receta del Futuro</a></li>
+
+      <li class="dropdown"> <b><span>Sobre Nosotros</span></b> <i class="fas fa-chevron-down arrow"></i></li>
+      <li class="dropdown"> <b><span>Descubre</span></b> <i class="fas fa-chevron-down arrow"></i></li>
+      <li class="dropdown"> <b><span>Ayuda</span> </b><i class="fas fa-chevron-down arrow"></i></li>
+    </ul>
+
+    <div class="download-section">
+      <p>Disfrutá de la<br><strong>mejor experiencia</strong></p>
+      <div class="store-buttons">
+        <button class="store-btn ios"><img src="ios.png" alt="iOS"></button>
+        <button class="store-btn android"><img src="androi.png" alt="Android"></button>
+      </div>
+    </div>
+    
+  </nav>
+
+
+  <script>
+    const openMenuBtn = document.getElementById('openMenu');
+    const closeMenuBtn = document.getElementById('closeMenu');
+    const sideMenu = document.getElementById('sideMenu');
+
+    openMenuBtn.addEventListener('click', () => {
+      sideMenu.classList.add('open');
+    });
+
+    closeMenuBtn.addEventListener('click', () => {
+      sideMenu.classList.remove('open');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      
+    }
+
+    .menu-btn {
+      font-size: 2rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin: 1rem;
+    }
+
+    .side-menu {
+      position: fixed;
+      left: -100%;
+      top: 0;
+      width: 25%;
+      height: 100%;
+      background-color: white;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+      transition: left 0.3s ease;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000;
+      justify-content: flex-start;
+    }
+
+    .side-menu.open {
+      left: 0;
+    }
+
+    .close-btn {
+      font-size: 2rem;
+      background: none;
+      border: none;
+      align-self: flex-start; /* alinea la cruz a la izquierda */
+      cursor: pointer;
+      margin-bottom: 1rem;
+    }
+
+    .menu-list {
+      list-style: none;
+      padding: 0;
+      padding-left: 1rem;
+      
+    }
+
+    .menu-list li {
+      margin: 1rem 0;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding-bottom: 1.5rem;
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+
+    .menu-list a {
+      text-decoration: none;
+      color: black;
+      font-size: 0.9rem;
+    }
+
+    .menu-list a:visited {
+      color: black;
+    }
+
+    .menu-list img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .dropdown {
+      cursor: pointer;
+      justify-content: space-between;
+      display: flex;
+    }
+
+    .arrow {
+      margin-left: auto;
+      font-size: 0.8rem;
+      color: #000;
+      transition: transform 0.3s ease;
+    }
+
+
+    .download-section {
+      margin-top: auto;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      padding-left: 0.8rem;
+      text-align: left;
+    }
+
+    .download-section p {
+      margin: 0 0 2rem;
+      font-size: 1.4rem;
+    }
+
+    .store-buttons {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .store-btn {
+      background-color:  #fbfbfb ;
+      border: none;
+      border-radius: 12px;
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      
+    }
+    .store-btn img {
+      width: 80%;  
+      height: 90%;
+    }
+   
