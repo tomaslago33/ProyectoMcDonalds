@@ -126,6 +126,107 @@
       width: 80%;  
       height: 90%;
     }
+
+    .footer {
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  flex: 1 1 120px;
+}
+
+.footer-logo img {
+  width: 80px;
+  height: auto;
+}
+
+.footer-section {
+  flex: 1 1 180px;
+}
+
+.footer-section h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.app-text {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.app-buttons {
+  margin-top: 10px;
+}
+
+.app-buttons img {
+  height: 35px;
+  margin-right: 10px;
+}
+
+.footer-divider {
+  margin: 30px 0 20px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
    
     </style>
 </head>
@@ -369,6 +470,65 @@
 
   </div>
 </section>
+ <footer class="footer">
+  <div class="footer-content">
+    
+    <!-- Logo a la izquierda -->
+    <div class="footer-logo">
+      <img src="../imagenes/logo.png" alt="McDonald's Logo">
+    </div>
+
+    <!-- Columna 1 -->
+    <div class="footer-section">
+      <h4>Sobre Nosotros</h4>
+      <ul>
+        <li><a href="#">Restaurantes</a></li>
+        <li><a href="#">Quiénes Somos</a></li>
+        <li><a href="#">Trabaja con nosotros</a></li>
+        <li><a href="#">Con las familias</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Protección de datos Personales</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 2 -->
+    <div class="footer-section">
+      <h4>Descubre</h4>
+      <ul>
+        <li><a href="#">Cajita Feliz</a></li>
+        <li><a href="#">Roblox</a></li>
+        <li><a href="#">Puertas Transparentes</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3 -->
+    <div class="footer-section">
+      <h4>Contacto</h4>
+      <p>Sigue disfrutando en nuestras redes sociales</p>
+      <div class="social-icons">
+        <a href="#"><img src="../imagenes/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="../imagenes/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="../imagenes/youtube.svg" alt="YouTube"></a>
+        <a href="#"><img src="../imagenes/x.svg" alt="X"></a>
+      </div>
+      <p class="app-text">O descarga nuestra app<br>y multiplica la diversión</p>
+      <div class="app-buttons">
+        <a href="#"><img src="../imagenes/appstore.png" alt="App Store"></a>
+        <a href="#"><img src="../imagenes/googleplay.png" alt="Google Play"></a>
+      </div>
+    </div>
+  </div>
+
+  <hr class="footer-divider">
+
+  <div class="footer-bottom">
+    <div>&copy;2025 McDonald's. All rights reserved</div>
+    <div>
+      <a href="#">Política de privacidad</a>
+      <a href="#">Defensa del Consumidor</a>
+    </div>
+  </div>
+</footer>
 <script>
     const openMenuBtn = document.getElementById('openMenu');
     const closeMenuBtn = document.getElementById('closeMenu');
