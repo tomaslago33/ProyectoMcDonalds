@@ -48,3 +48,247 @@
   background-color: #e0a800;
   color: #000;
 }
+body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: white;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 1.5rem 2rem 0 2rem;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      
+    }
+
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+  .logo {
+    height: 48px;
+    margin-bottom: 2.5rem; /* más separación entre logo y enlaces */
+    margin-left: 50px;
+  }
+  .menu-secundario ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 1.5rem 2rem 0 2rem;
+  
+}
+
+
+
+.menu-secundario a {
+  position: relative;
+  text-decoration: none;
+  color: #1c1c1c;
+  font-size: 120%;
+  padding: 0.5rem 0;
+  transition: color 0.2s ease;
+}
+
+.menu-secundario a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background-color: #ffbc0d;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+.menu-secundario a:hover::after {
+  transform: scaleX(1);
+}
+
+ 
+.btn-entrar {
+  background-color: #ffbc0d;
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  height: 43px;
+  width: 10%;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 0 1px #c89600;
+  transition: background-color 0.2s ease;
+  border-radius: 3%;
+}
+
+.btn-entrar:hover {
+  background-color: #f2b300;
+}
+
+
+/* Resaltado amarillo en el título */
+.highlight {
+  display: inline-block;
+  background-color: #ffbf00;
+  padding: 0 5px;
+  line-height: 0.6;
+}
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  flex: 1 1 120px;
+}
+
+.footer-logo img {
+  width: 80px;
+  height: auto;
+}
+
+.footer-section {
+  flex: 1 1 180px;
+}
+
+.footer-section h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.app-text {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.app-buttons {
+  margin-top: 10px;
+}
+
+.app-buttons img {
+  height: 35px;
+  margin-right: 10px;
+}
+
+.footer-divider {
+  margin: 30px 0 20px;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+.categoria-scroll {
+  display: flex;
+  gap: 16px;           /* espacio entre ítems */
+  justify-content: center;
+  overflow-x: auto;    /* permite scroll horizontal */
+  padding-bottom: 8px; /* más cómodo al hacer scroll */
+}
+
+.categoria-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.categoria-scroll::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+.categoria-item {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;    /* ancho fijo */
+  min-height: 100px;  /* altura uniforme */
+}
+
+.categoria-item img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+.categoria-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.2;
+  white-space: nowrap; /* evita que el texto se rompa */
+}
+.categoria-item {
+  transition: transform 0.2s ease;
+}
+
+.categoria-item:hover {
+  transform: scale(1.07); /* se agranda un poquito */
+}
