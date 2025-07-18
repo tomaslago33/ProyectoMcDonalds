@@ -145,14 +145,7 @@ body {
   padding: 0 5px;
   line-height: 0.6;
 }
-.categoria-item {
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
 
-.categoria-item:hover {
-  transform: scale(1.05);
-}
 .footer {
   background-color: #f8f8f8;
   padding: 40px 20px;
@@ -251,4 +244,51 @@ body {
 
 .footer-bottom a:hover {
   text-decoration: underline;
+}
+.categoria-scroll {
+  display: flex;
+  gap: 16px;           /* espacio entre ítems */
+  justify-content: center;
+  overflow-x: auto;    /* permite scroll horizontal */
+  padding-bottom: 8px; /* más cómodo al hacer scroll */
+}
+
+.categoria-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.categoria-scroll::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+.categoria-item {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;    /* ancho fijo */
+  min-height: 100px;  /* altura uniforme */
+}
+
+.categoria-item img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+.categoria-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.2;
+  white-space: nowrap; /* evita que el texto se rompa */
+}
+.categoria-item {
+  transition: transform 0.2s ease;
+}
+
+.categoria-item:hover {
+  transform: scale(1.07); /* se agranda un poquito */
 }
