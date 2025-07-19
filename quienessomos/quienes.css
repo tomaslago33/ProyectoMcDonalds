@@ -70,11 +70,21 @@ body {
       align-items: flex-start;
     }
 
-  .logo {
-    height: 48px;
-    margin-bottom: 2.5rem; /* más separación entre logo y enlaces */
-    margin-left: 50px;
-  }
+ 
+ 
+
+
+.menu-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.logo {
+  height: 40px; /* o el tamaño que quieras */
+}
+
   .menu-secundario ul {
   list-style: none;
   display: flex;
@@ -83,6 +93,7 @@ body {
   padding: 1.5rem 2rem 0 2rem;
   
 }
+
 
 
 
