@@ -1,15 +1,59 @@
-  body {
+.seccion-tarjetas {
+  background-color: #fff;
+}
+
+.custom-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.custom-card img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.custom-card .card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.custom-card .btn-warning {
+  background-color: #ffbf00;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 10px 30px;
+  color: #000;
+  transition: background-color 0.3s ease;
+  /* Lo que hace que el botón se quede abajo */
+  margin-top: auto;
+  align-self: flex-start; 
+}
+
+.custom-card .btn-warning:hover {
+  background-color: #e0a800;
+  color: #000;
+}
+body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       background-color: white;
     }
-     .menu-btn {
-      font-size: 2rem;
-      background: none;
-      border: none;
-      cursor: pointer;
-      margin: 1rem;
-    }
+
     .navbar {
       display: flex;
       justify-content: space-between;
@@ -31,7 +75,7 @@
     margin-bottom: 2.5rem; /* más separación entre logo y enlaces */
     margin-left: 50px;
   }
-.menu-secundario ul {
+  .menu-secundario ul {
   list-style: none;
   display: flex;
   gap: 2rem;
@@ -93,55 +137,15 @@
   background-color: #f2b300;
 }
 
-  
-  .productos {
-  background: white;
-  box-shadow: inset 0 40px 40px -20px rgba(0, 0, 0, 0.1);
-  
-}
-.productos-inner{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  justify-content: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+/* Resaltado amarillo en el título */
+.highlight {
+  display: inline-block;
+  background-color: #ffbf00;
+  padding: 0 5px;
+  line-height: 0.6;
 }
 
-
-  .categoria {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
-
-  .categoria:hover {
-    transform: scale(1.15);
-  }
-
-.categoria img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  display: block;
-}
-
-
-  .categoria p {
-    margin-top: 0.5rem;
-    font-size: 140%;
-  }
-.productos-inner .categoria:nth-child(4) img {
-  width: 100px;
-}
-
-.productos-inner .categoria:nth-child(8) img {
-  width: 100px;
-}
 .footer {
   background-color: #f8f8f8;
   padding: 40px 20px;
@@ -240,4 +244,51 @@
 
 .footer-bottom a:hover {
   text-decoration: underline;
+}
+.categoria-scroll {
+  display: flex;
+  gap: 16px;           /* espacio entre ítems */
+  justify-content: center;
+  overflow-x: auto;    /* permite scroll horizontal */
+  padding-bottom: 8px; /* más cómodo al hacer scroll */
+}
+
+.categoria-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.categoria-scroll::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+.categoria-item {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;    /* ancho fijo */
+  min-height: 100px;  /* altura uniforme */
+}
+
+.categoria-item img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+.categoria-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.2;
+  white-space: nowrap; /* evita que el texto se rompa */
+}
+.categoria-item {
+  transition: transform 0.2s ease;
+}
+
+.categoria-item:hover {
+  transform: scale(1.07); /* se agranda un poquito */
 }
